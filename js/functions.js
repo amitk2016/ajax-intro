@@ -4,7 +4,8 @@ $(document).ready(function(){
 });
 
 function showCities(){
-	
+	// document.getElementById("cities").disabled = false;
+	$('#suburb').html('');
 	var CountryID = $(this).val();
 
 	// make sure that ID is a number 
@@ -44,7 +45,8 @@ function showCities(){
 }
 
 	function showsuburb(){
-
+		$('#suburb').html('');
+		// document.getElementById("suburb").disabled = false;
 		var CityID = $(this).val();
 
 		// make sure that ID is a number 

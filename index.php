@@ -26,15 +26,13 @@
 			
 	</select>
 
-	<select id="cities" name="cities">
-
-	<option>Please select your city</option>
+	<select id="cities" name="cities" >
 			
 	</select>
 
 	<select id="suburb" name="suburb" >
 		
-		<option>Please Select a Suburb</option>
+
 
 	</select>
 

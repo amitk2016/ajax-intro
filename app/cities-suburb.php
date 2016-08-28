@@ -10,7 +10,7 @@ $sql = "SELECT suburb_id,suburb_name FROM suburb WHERE city_id = $CityID";
 // RUN THE QUERY 
 $result = $dbc->query($sql);
 
-if ( $result->num_rows > 0) {
+if ( $result->num_rows > 0 ) {
 	
 	$suburb = json_encode( $result->fetch_all(MYSQL_ASSOC) );
 
@@ -22,5 +22,5 @@ if ( $result->num_rows > 0) {
 }else {
 
 	//No results
-	echo ('error');
+	echo 'error';
 }
