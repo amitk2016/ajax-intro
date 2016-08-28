@@ -5,7 +5,7 @@ $dbc = new mysqli('localhost', 'root', '', 'ajax_location');
 
 $CountryID = $dbc->real_escape_string($_GET['CountryID']);
 
-$sql = "SELECT 	CityID,CityName FROM cities WHERE 	CountryID = $CountryID";
+$sql = "SELECT 	CityID,CityName FROM cities WHERE CountryID = $CountryID";
 
 // RUN THE QUERY 
 $result = $dbc->query($sql);
